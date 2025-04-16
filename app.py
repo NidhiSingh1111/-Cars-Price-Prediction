@@ -5,7 +5,7 @@ import openpyxl
 from flask import Flask, render_template, request, redirect
 from flask_cors import CORS, cross_origin
 
-app = Flask(__name__, statics_folder='statics')
+app = Flask(__name__, static_folder='statics')
 cors = CORS(app)
 model = pickle.load(open('Linear_Regression_Model.pkl', 'rb'))
 car = pd.read_excel('car_data.xlsx')
