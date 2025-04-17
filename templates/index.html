@@ -26,7 +26,8 @@
                 <form method="post" accept-charset="utf-8" name="Modelform">
                     <div class="col-md-10 form-group text-center">
                         <label><b>Select the Vehicle Type:</b> </label>
-                        <select class="form-control" id="vehicle" name="vehicle" required>
+                        <select class="form-control" id="vehicle" name="vehicle" required="1">
+                            <option value="" disabled selected>Select the Vehicle Type</option>
                             {% for v in vehicle %}
                                   <option value="{{ v }}">{{ v }}</option>
                             {% endfor %}
@@ -52,6 +53,7 @@
                     <div class="col-md-10 form-group" style="text-align: center">
                         <label><b>Select Purchasing Year:</b> </label><br>
                         <select class="selectpicker form-control" id="year" name="year" required="1">
+                            <option value="" disabled selected>Select the Vehicle Type</option>
                             {% for yr in year %}
                                 <option value="{{ yr }}">{{ yr }}</option>
                             {% endfor %}
