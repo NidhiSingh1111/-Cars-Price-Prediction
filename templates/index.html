@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
 </head>
 
-<body class="bg-white">
+<body class="bg-image">
     <div class="row justify-content-center">
         <div class="mt-5 col-12 col-md-8" style="width: 100%;">
             <div class=" header text-center">
@@ -74,6 +74,7 @@
                     <div class="col-md-10 form-group" style="text-align: center">
                         <label><b>Select the Fuel Type:</b> </label><br>
                         <select class="selectpicker form-control" id="fuel_type" name="fuel_type" required="1">
+                            <option value="" disabled selected>Select the Fuel Type</option>
                             {% for fuel_type  in fuel_type %}
                                 <option value="{{ fuel_type }}">{{ fuel_type }}</option>
                             {% endfor %}
@@ -83,6 +84,7 @@
                     <div class="col-md-10 form-group" style="text-align: center">
                         <label><b>Select the Seller Type:</b> </label><br>
                         <select class="selectpicker form-control" id="seller_type" name="seller_type" required="1">
+                            <option value="" disabled selected>Select the Seller Type</option>
                             {% for seller_type in seller_type %}
                                 <option value="{{ seller_type }}">{{ seller_type }}</option>
                             {% endfor %}
@@ -92,6 +94,7 @@
                     <div class="col-md-10 form-group" style="text-align: center">
                         <label><b>Select the Transmission Type:</b> </label><br>
                         <select class="selectpicker form-control" id="transmission" name="transmission" required="1">
+                            <option value="" disabled selected>Select the Transmission Type</option>
                             {% for transmission  in transmission %}
                                 <option value="{{ transmission }}">{{ transmission }}</option>
                             {% endfor %}
