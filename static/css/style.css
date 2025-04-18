@@ -1,7 +1,7 @@
 .form-background {
     background: url('/static/images/cars.png'); /* adjust path if needed */
     background-size: cover;
-    background-position: center;
+    background-position: center 30%;
     background-repeat: no-repeat;
     padding: 30px;
     border-radius: 10px;
